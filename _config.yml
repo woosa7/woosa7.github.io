@@ -1,13 +1,17 @@
 # Setup
-title: woosa7
-tagline:      A responsive theme for your project on GitHub Pages
+title: Data Analytics with Python & R
+tagline:      Statistics, Data Mining, Machine Learning and Deep Learning
 baseurl:      ""
 paginate:     1
 
 # About/contact
-author:
-  name:       woosa7
-  url:        http://yourhomepage.com 
+repo1:
+  name:       Python Repository
+  url:        https://github.com/woosa7/PythonDataAnalytics
+
+repo2:
+  name:       R Repository
+  url:        https://github.com/woosa7/RDataAanlytics
 
 # Gems
 gems:
