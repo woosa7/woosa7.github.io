@@ -1,11 +1,11 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Data Analytics with Python & R
+email:       woosa7@gmail.com
+author:      woosa7
+description: "Statistics, Data Mining, Machine Learning & Deep Learning"
 baseurl:     ""
-url:         "http://pixyll.com"
-date_format: "%b %-d, %Y"
+url:         "http://woosa7.github.io"
+date_format: "%Y-%m-%d"
 
 # Google services
 google_verification:
