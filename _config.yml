@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: woosa7
-email: your-email@domain.com
+title: Data Analytics with Python & R
+email: woosa7@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Webjeda Cards is a Bootstrap based jekyll theme for portfolio, photography or any kind of blog.
   
@@ -28,25 +28,25 @@ copyright:
 # Build settings
 markdown: kramdown
 permalink: /:title/
-paginate: 6
+paginate: 9
 paginate_path: /page:num/
 
 # Tracker
-analytics: UA-83979019-1
+analytics:
 
 # Comments
-disqus-shortname: webjeda-demo
+disqus-shortname:
 
 #social
-facebook: http://facebook.com/webjeda
-quora: http://quora.com/sharathdt
-twitter: http://twitter.com/@webjeda
-github: http://github.com/webjeda
+facebook: https://www.facebook.com/woosa7
+quora:
+twitter:
+github: https://github.com/woosa7
 
 #facebook like box
-fb-app-id: 549480635219583
-fb-page-url: https://www.facebook.com/webjeda/
-fb-page-title: webjeda
+fb-app-id:
+fb-page-url: https://www.facebook.com/woosa7/
+fb-page-title:
 
 # Sass style
 sass:
