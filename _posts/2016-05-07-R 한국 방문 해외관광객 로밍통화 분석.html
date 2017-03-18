@@ -154,17 +154,7 @@ summary(cdrData)</code></pre>
 ## 5 tour018445 2015/0125  2258-07  Japan   Seoul
 ## 6 tour166649 2015/0102  1856-19  China   Seoul</code></pre>
 <pre class="r"><code>require(dplyr)</code></pre>
-<pre><code>## Loading required package: dplyr</code></pre>
-<pre><code>## 
-## Attaching package: 'dplyr'</code></pre>
-<pre><code>## The following objects are masked from 'package:stats':
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union</code></pre>
 <pre class="r"><code>require(reshape2)</code></pre>
-<pre><code>## Loading required package: reshape2</code></pre>
 <pre class="r"><code>library(ggplot2)</code></pre>
 <pre class="r"><code># 1. 우리나라를 가장 많이 방문한 나라의 이름은? 1등과 2등 국가의 방문객수 차이는?
 
@@ -453,18 +443,6 @@ head(areaCount);nrow(areaCount)</code></pre>
 <pre><code>## [1] 102777</code></pre>
 <pre class="r"><code># 5-4. 위 데이터 join
 require(plyr)</code></pre>
-<pre><code>## Loading required package: plyr</code></pre>
-<pre><code>## -------------------------------------------------------------------------</code></pre>
-<pre><code>## You have loaded plyr after dplyr - this is likely to cause problems.
-## If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
-## library(plyr); library(dplyr)</code></pre>
-<pre><code>## -------------------------------------------------------------------------</code></pre>
-<pre><code>## 
-## Attaching package: 'plyr'</code></pre>
-<pre><code>## The following objects are masked from 'package:dplyr':
-## 
-##     arrange, count, desc, failwith, id, mutate, rename, summarise,
-##     summarize</code></pre>
 <pre class="r"><code>touristsData &lt;- join(callCount, dayCount)</code></pre>
 <pre><code>## Joining by: touristID</code></pre>
 <pre class="r"><code>touristsData &lt;- join(touristsData, areaCount)</code></pre>
