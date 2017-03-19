@@ -12,7 +12,7 @@ layout: default
                  
                 <div class="panel panel-default">
                   <div class="panel-body">
-                    <h3 class="panel-title pull-left">{{ post.title | truncate: 30 | capitalize}}</h3><span class="post-meta pull-right"><small>{{ post.date | date: "%Y-%m-%d" }}</small></span>
+                    <h3 class="panel-title pull-left">{{ post.title | truncate: 30}}</h3><span class="post-meta pull-right"><small>{{ post.date | date: "%Y-%m-%d" }}</small></span>
                   </div>
                   {% if post.img %}
                   <img width="100%" src="{{site.baseurl}}/images/{{post.img}}" alt="{{post.title}}">
