@@ -131,7 +131,26 @@ $(document).ready(function () {
 
 <br>
 <pre class="r"><code>주성분 분석 (Principal Component Analysis)</code></pre>
-    <pre class="r"><code>library(MVA)</code></pre>
+<pre class="r"><code>상관관계가 있는 변수들을 선형결합하여 변수를 축약하는 기법. 요인 분석의 한 종류.
+첫번째 주성분이 전체 변동을 가장 많이 설명하고, 두번째 주성분은 첫번째 주성분과 상관성이 낮아 첫번째 주성분이 설명하지 못하는 나머지 변동을 정보의 손실없이 가장 많이 설명할 수 있도록 변수들을 조합.
+
+1. 목적
+
+- 여러 변수들 간에 내재하는 상관관계, 연관성을 이용해 소수의 주성분으로 차원을 축소
+- 다중공선성이 존재하는 경우, 상관성이 적은 주성분으로 변수들을 축소하여 모형 개발에 활용
+- 주성분분석을 통해 차원을 축소한 후 군집분석을 수행하면 결과와 연산속도를 개선할 수 있음
+- 다량의 센서 데이터를 주성분분석으로 차원 축소한 후 시계열로 분포나 추세의 변화를 분석하여 고장 징후를 사전에 파악
+
+2. 공분산 행렬 / 상관계수 행렬
+
+주성분 분석의 문제는 척도에 영향을 받는다는 점이다. 변수들의 선형결합을 유도할 때 분산을 이용하기 때문에 결과적으로 공분산 행렬로부터 유도된 주성분은 측정단위의 크기에 좌우된다.
+설문조사처럼 모든 변수들이 같은 수준으로 점수화가 된 경우에는 공분산 행렬을 사용해도 되지만 변수들의 scale이 서로 많이 다른 경우에는 값이 큰 특정 변수가 전체적인 경향을 좌우하기 때문에 상관계수 행렬을 사용하여 추출해야 한다.
+
+3. 주성분 선택법
+
+주성분분석 결과에서 누적기여율(cumulative proportion)이 85%이상인 주성분까지 선택
+screen plot에서 고유값이 수평을 유지하기 전단계로 주성분의 수를 선택</code></pre>
+<pre class="r"><code>library(MVA)</code></pre>
 <pre class="r"><code>df &lt;- read.csv(&quot;data/open_closed.csv&quot;)
 head(df)</code></pre>
 <pre><code>##   mechanics_C vectors_C algebra_O analysis_O statistics_O
