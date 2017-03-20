@@ -130,7 +130,9 @@ $(document).ready(function () {
 </div>
 
 <br>
-<pre class="r"><code># Classification - Decision Tree, Ensemble (Bagging, Boosting, Random Forest)</code></pre>
+<pre class="r"><code>Classification - Decision Tree, Ensemble (Bagging, Boosting, Random Forest)
+참고자료1 : <a href="http://blog.naver.com/woosa7/220825080440">Ensemble 기법</a>
+참고자료2 : <a href="http://blog.naver.com/woosa7/220840338896">ROCR, Lift chart</a> </code></pre>
 <pre class="r"><code>Supervised Learning - 목표 변수 존재
  1) 분류 (Classification) : 목표 변수가 범주형
  2) 추정/예측 (Estimation) : 목표 변수가 연속형
@@ -429,7 +431,22 @@ confusionMatrix(test_2$pred, test_2$Species)</code></pre>
 ## Detection Rate              0.4035            0.2807           0.2456
 ## Detection Prevalence        0.4035            0.3333           0.2632
 ## Balanced Accuracy           0.9600            0.9331           0.9548</code></pre><br>
+<pre class="r"><code>Ensemble
+
+의사결정나무(Decision Tree)는 데이터의 작은 변화에 의해 예측 모델이 크게 변하는 불안정성이 있다.
+주어진 자료로 여러 개의 예측 모델을 만들어 조합하여 하나의 최종 예측 모델을 만드는 방법을 앙상블(ensemble) 기법이라고 한다.
+
+<a href="http://cse-wiki.unl.edu/wiki/index.php/Bagging_and_Boosting">참고자료1-Bagging and Boosting</a>
+<a href="http://www.slideshare.net/hustwj/an-introduction-to-ensemble-methodsboosting-bagging-random-forests-and-more">참고자료2-random forest</a>
+<a href="http://www.richardafolabi.com/blog/non-technical-introduction-to-random-forest-and-gradient-boosting-in-machine-learning.html">참고자료3-random forest and gradient boosting</a>
+</code></pre><br>
 <pre class="r"><code>3. Decision Tree - Ensemble - Bagging</code></pre>
+<pre class="r"><code>주어진 데이터에서 여러 개의 bootstrap 자료를 생성 --> 각 자료에 대한 예측 모델 생성 --> 결합하여 최종 모델 결정
+일반적으로 traing data의 모집단 분포를 모르기 때문에 실제 문제에서는 평균예측모델을 구할 수 없다.
+배깅은 traing data를 모집단으로 생각하고 평균예측모델을 구하기 때문에 분산을 줄이고 예측력을 향상시킬 수 있다.
+일반적으로 overfitting 된 모델일 경우 사용하면 좋다.
+bootstrap : raw data 에서 랜덤 복원추출을 통해 만든 동일한 크기의 자료들
+voting : 여러 개의 모델로부터 산출된 결과를 합쳐 다수결에 의해 최종 결과로 선택</code></pre>
 <pre class="r"><code># bootstrap data 생성
 data_boot1 &lt;- iris[sample(1:nrow(iris), replace = T), ]
 data_boot2 &lt;- iris[sample(1:nrow(iris), replace = T), ]
@@ -507,6 +524,10 @@ confusionMatrix(test$result, test$Species)</code></pre>
 ## Detection Prevalence        0.3333            0.3200           0.3467
 ## Balanced Accuracy           1.0000            0.9650           0.9750</code></pre><br>
 <pre class="r"><code>4. Decision Tree - Ensemble - Boosting</code></pre>
+<pre class="r"><code>예측력이 약한 모델들을 결합하여 강한 예측 모델을 만드는 방법. 훈련오차를 빨리 그리고 쉽게 줄일 수 있다.
+잘못 분류된 데이터에 가중치를 주어서 더 잘 분류하는 것이 목적.
+단점 : 2차, 3차 분류기에 들어가는 데이터는 기존 데이터의 일부만 적용되므로 traing data의 규모가 커야 한다.
+Adaboost : 이진분류 문제에서 랜덤 분류기보다 조금 더 좋은 분류기 n개에 가중치를 설정하고 이를 결합하여 최종 분류기를 만듬.</code></pre>
 <pre class="r"><code>library(tree)
 
 data(kyphosis, package = &quot;rpart&quot;)   # 척추교정 수술을 받은 어린이 데이터.
@@ -584,6 +605,9 @@ a;b</code></pre>
 ## [1,] 5.179248</code></pre>
 <pre class="r"><code># b가 a 보다 확률이 높기 때문에 80번째 데이터는 present로 최종 예측</code></pre><br>
 <pre class="r"><code>5. Decision Tree - Ensemble - Random Forest</code></pre>
+<pre class="r"><code>bagging, boosting 보다 더 많은 무작위성을 주어 모델을 생성한 후 이를 선형 결합하여 최종 모델을 만드는 방법.
+입력 변수가 아주 많은 경우에도 변수 제거없이 실행 가능.
+최종 결과에 대한 해석이 어렵다는 단점이 있지만 좋은 예측력을 보인다.</code></pre>
 <pre class="r"><code>idx &lt;- sample(2, nrow(iris), replace = T, prob = c(0.7, 0.3))
 trainData &lt;- iris[idx == 1, ]
 testData &lt;- iris[idx == 2, ]
