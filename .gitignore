@@ -2,3 +2,7 @@ _site/
 .sass-cache/
 .jekyll-metadata
 /.idea/workspace.xml
+/.DS_Store
+/.idea/preferred-vcs.xml
+/.idea/.DS_Store
+/.idea/dictionaries
