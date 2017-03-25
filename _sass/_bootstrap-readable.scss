@@ -2256,7 +2256,11 @@ pre code {
   }
 }
 table {
-  background-color: transparent;
+  background-color: yellow; //transparent;
+  display:table;
+  margin-right:auto;
+  margin-left:auto;
+  width:100%;
 }
 caption {
   padding-top: 8px;
