@@ -2273,10 +2273,11 @@ th {
   margin-bottom: 22px;
 }
 .dataframe {
-  background-color: green;
+  background-color: yellow;
   margin-right:auto;
   margin-left:auto;
-  max-width: 100%;
+  width:auto;
+  max-width:auto;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
