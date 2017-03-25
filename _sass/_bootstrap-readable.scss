@@ -2256,11 +2256,7 @@ pre code {
   }
 }
 table {
-  background-color: yellow; //transparent;
-  display:table;
-  margin-right:auto;
-  margin-left:auto;
-  width:auto;
+  background-color: transparent;
 }
 caption {
   padding-top: 8px;
@@ -2272,12 +2268,15 @@ th {
   text-align: left;
 }
 .table {
-  display:table;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px;
+}
+.dataframe {
+  background-color: yellow;
   margin-right:auto;
   margin-left:auto;
-  width:100%;
-  //max-width: 100%;
-  margin-bottom: 52px;
+  width:50%;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
