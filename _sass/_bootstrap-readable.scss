@@ -2268,8 +2268,9 @@ th {
   text-align: left;
 }
 .table {
-  width: auto; //100%;
-  max-width: 100%;
+  margin-right:auto;
+  margin-left:auto;
+  width:100%;
   margin-bottom: 22px;
 }
 .table > thead > tr > th,
