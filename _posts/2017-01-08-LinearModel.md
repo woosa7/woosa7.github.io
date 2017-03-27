@@ -32,7 +32,7 @@ cars.head()
 
 
 <div>
-<table border="1" class="dataframe" width="500">
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
