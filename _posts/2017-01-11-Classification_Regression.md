@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Linear Model(Lasso, Ridge)을 통한 예측
+title:  Linear Model - Lasso, Ridge
 date:   2017-01-11
 categories: python
 img: performance_table.jpg
