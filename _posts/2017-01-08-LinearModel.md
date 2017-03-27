@@ -12,7 +12,7 @@ img: LinearModel_21_0.png
 
 ## Seaborn
 
-Python에서 많이 쓰이는 시각화 라이브러리. http://seaborn.pydata.org/
+Python에서 많이 쓰이는 시각화 라이브러리. [http://seaborn.pydata.org](http://seaborn.pydata.org/)
 
 
 ```python
@@ -37,7 +37,6 @@ cars.head()
     <tr style="text-align: right;">
       <th></th>
       <th>symboling</th>
-      <th>normalized_losses</th>
       <th>maker</th>
       <th>fuel</th>
       <th>aspiration</th>
@@ -47,23 +46,12 @@ cars.head()
       <th>engine_location</th>
       <th>wheel_base</th>
       <th>...</th>
-      <th>engine_size</th>
-      <th>fuel_system</th>
-      <th>bore</th>
-      <th>stroke</th>
-      <th>compression_ratio</th>
-      <th>horsepower</th>
-      <th>peak_rpm</th>
-      <th>city_mpg</th>
-      <th>highway_mpg</th>
-      <th>price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>2</td>
-      <td>164</td>
       <td>audi</td>
       <td>gas</td>
       <td>std</td>
@@ -73,21 +61,10 @@ cars.head()
       <td>front</td>
       <td>99.8</td>
       <td>...</td>
-      <td>109</td>
-      <td>mpfi</td>
-      <td>3.19</td>
-      <td>3.4</td>
-      <td>10.0</td>
-      <td>102</td>
-      <td>5500</td>
-      <td>24</td>
-      <td>30</td>
-      <td>13950</td>
     </tr>
     <tr>
       <th>1</th>
       <td>2</td>
-      <td>164</td>
       <td>audi</td>
       <td>gas</td>
       <td>std</td>
@@ -97,21 +74,10 @@ cars.head()
       <td>front</td>
       <td>99.4</td>
       <td>...</td>
-      <td>136</td>
-      <td>mpfi</td>
-      <td>3.19</td>
-      <td>3.4</td>
-      <td>8.0</td>
-      <td>115</td>
-      <td>5500</td>
-      <td>18</td>
-      <td>22</td>
-      <td>17450</td>
     </tr>
     <tr>
       <th>2</th>
       <td>1</td>
-      <td>158</td>
       <td>audi</td>
       <td>gas</td>
       <td>std</td>
@@ -121,21 +87,10 @@ cars.head()
       <td>front</td>
       <td>105.8</td>
       <td>...</td>
-      <td>136</td>
-      <td>mpfi</td>
-      <td>3.19</td>
-      <td>3.4</td>
-      <td>8.5</td>
-      <td>110</td>
-      <td>5500</td>
-      <td>19</td>
-      <td>25</td>
-      <td>17710</td>
     </tr>
     <tr>
       <th>3</th>
       <td>1</td>
-      <td>158</td>
       <td>audi</td>
       <td>gas</td>
       <td>turbo</td>
@@ -145,21 +100,10 @@ cars.head()
       <td>front</td>
       <td>105.8</td>
       <td>...</td>
-      <td>131</td>
-      <td>mpfi</td>
-      <td>3.13</td>
-      <td>3.4</td>
-      <td>8.3</td>
-      <td>140</td>
-      <td>5500</td>
-      <td>17</td>
-      <td>20</td>
-      <td>23875</td>
     </tr>
     <tr>
       <th>4</th>
       <td>2</td>
-      <td>192</td>
       <td>bmw</td>
       <td>gas</td>
       <td>std</td>
@@ -169,16 +113,6 @@ cars.head()
       <td>front</td>
       <td>101.2</td>
       <td>...</td>
-      <td>108</td>
-      <td>mpfi</td>
-      <td>3.50</td>
-      <td>2.8</td>
-      <td>8.8</td>
-      <td>101</td>
-      <td>5800</td>
-      <td>23</td>
-      <td>29</td>
-      <td>16430</td>
     </tr>
   </tbody>
 </table>
