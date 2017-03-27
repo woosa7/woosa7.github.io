@@ -6,15 +6,14 @@
             <img width="600" src="{{site.baseurl}}/images/{{site.default-image}}" alt="webjeda">
             {% endif %}
         </div>
-            
-        
+
         <div class="mt10 recent">
-            <h2>Recent articles</h2>        
+            <h3>Recent articles</h3>
              <ul>
-                {% for post in site.related_posts limit:3 %}
+                {% for post in site.related_posts limit:5 %}
 
                       <li>
-                      <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small>&nbsp;&nbsp;{{ post.date | date: "%Y-%m-%d" }}</small></p>
+                      <p><small><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>&nbsp;&nbsp;{{ post.date | date: "%Y-%m-%d" }}</small></p>
                       </li>
 
                 {% endfor %}
