@@ -193,6 +193,10 @@ table {
   border-collapse: collapse;
   margin-bottom: 22px;
 }
+table .dataframe {
+    width: 10%;
+    background-color: yellow;
+}
 td,
 th {
   padding: 5px;
