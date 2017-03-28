@@ -193,10 +193,6 @@ table {
   border-collapse: collapse;
   margin-bottom: 22px;
 }
-.dataframe {
-    width: 10%;
-    background-color: yellow;
-}
 td,
 th {
   padding: 5px;
@@ -2261,6 +2257,10 @@ pre code {
 }
 table {
   background-color: transparent;
+}
+.dataframe {
+    width: 10%;
+    background-color: yellow;
 }
 caption {
   padding-top: 8px;
