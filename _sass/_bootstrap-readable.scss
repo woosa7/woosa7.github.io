@@ -2258,9 +2258,10 @@ pre code {
 }
 table {
   background-color: transparent;
+  table-layout: auto;
 }
 .dataframe {
-    background-color: green;
+    background-color: yellow;
 }
 caption {
   padding-top: 8px;
