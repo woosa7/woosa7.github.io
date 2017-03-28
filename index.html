@@ -46,7 +46,7 @@ layout: default
               <li class="active"><span><em>{{ page }}</em></span></li>
 
             {% elsif page == 1 %}
-            <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+            <li><a href="{{ site.paginate_path | prepend: site.baseurl}}">{{ page }}</a></li>
             <!--<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>-->
 
             {% else %}
