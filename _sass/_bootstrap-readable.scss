@@ -192,7 +192,6 @@ table {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   border-collapse: collapse;
   margin-bottom: 22px;
-  max-width: 100px;
 }
 td,
 th {
@@ -2259,9 +2258,6 @@ pre code {
 table {
   background-color: transparent;
   table-layout: auto;
-}
-.dataframe {
-    background-color: blue;
 }
 caption {
   padding-top: 8px;
