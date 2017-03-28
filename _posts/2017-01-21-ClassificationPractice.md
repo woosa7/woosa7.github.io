@@ -3,7 +3,7 @@ layout: post
 title:  개인의 income을 예측하는 머신러닝 모델링
 date:   2017-01-21
 categories: python
-img: multilayerperceptron_network.png
+img: ClassificationPractice.png
 ---
 
 #### Logistic Regression, Decision Tree, Random Forest, Gradient Boosting Tree, SVM, k-NN, Neural Network
