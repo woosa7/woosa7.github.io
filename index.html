@@ -19,6 +19,7 @@ layout: default
                   {% else %}
                   <!--<img width="100%" src="{{site.baseurl}}/images/r_logo.jpg" alt="{{site.title}}">-->
                   {% endif %}
+                  <div class="panel-body"><small>{{post.categories}}</small></div>
                   <div class="panel-body"><small>
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</small>
                     <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary btn-sm pull-right mt10">Read</a>
