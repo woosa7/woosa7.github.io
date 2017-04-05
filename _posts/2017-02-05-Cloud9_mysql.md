@@ -1,12 +1,12 @@
 ---
 layout: post
-title: finda c9에 MySQL 환경 설정
+title: cloud9에 MySQL 환경 설정
 date:   2017-02-05
 categories: python
 img: c9_mysql_50_1.png
 ---
 
-#### Cloud9에 MySQL DB 설정 및 기초 데이터 수집
+#### [FinDA] Cloud9에 MySQL DB 설정 및 기초 데이터 수집
 
 ----------------------------------
 
