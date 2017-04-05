@@ -31,11 +31,11 @@ mysql> exit
 ```
 
 ### 1.3. utf-8 인코딩 설정
-* utf-8이 기본이 되도록 만들어 놓은 설정 파일 my.cnf ( https://goo.gl/4QDsBy )
+* utf-8이 기본이 되도록 만들어 놓은 설정 파일 my.cnf [링크](https://www.dropbox.com/s/uzuhb28u363i597/my.cnf?dl=0)
 * my.cnf 을 다운로드 하여, /etc/mysql/ 에 복사하고, mysql을 재시동
 
 ```bash
-$ wget https://goo.gl/4QDsBy -O my.cnf
+$ wget https://www.dropbox.com/s/uzuhb28u363i597/my.cnf?dl=0 -O my.cnf
 $ sudo cp my.cnf /etc/mysql/my.cnf
 $ mysql-ctl restart
 
