@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [finda] c9에 MySQL 환경 설정
+title: finda c9에 MySQL 환경 설정
 date:   2017-02-05
 categories: python
 img: c9_mysql_50_1.png
