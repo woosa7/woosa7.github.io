@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 거래소 상회법인목록 크롤링
+title: 거래소 상장법인목록 크롤링
 date:   2017-02-11
 categories: python
 img: 04-1-2.jpg
@@ -649,7 +649,7 @@ from sqlalchemy import create_engine
 
 
 ```python
-con_str = 'mysql+mysqlconnector://woosa7:finda888@localhost/findb'
+con_str = 'mysql+mysqlconnector://woosa7:finda***@localhost/findb'
 engine = create_engine(con_str, echo=False)
 ```
 
